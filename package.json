@@ -1,0 +1,21 @@
+{
+  "name": "pagga-stellar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pagga's non-custodial Stellar treasury client: DeFindex deposit/withdraw signed by the owner's wallet, with auth-tree, fee and price guards.",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:live": "STELLAR_LIVE=1 vitest run __tests__/stellar-defindex.live.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@stellar/freighter-api": "6.0.1",
+    "@stellar/stellar-sdk": "14.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "5.6.3",
+    "vitest": "4.1.0"
+  }
+}
